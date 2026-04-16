@@ -440,7 +440,7 @@ html {
     margin-top: 1rem;
 }
 
-.conteudo__container__paragrafo {
+.conteudo__paragrafo__acai {
     font-family: var(--fonte-texto);
     font-size: 1.2rem;
     color: var(--cor-texto);
@@ -448,7 +448,7 @@ html {
     margin-top: 0.5rem;
 }
 
-.conteudo__container__bts {
+.conteudo__acai__bts {
     width: 280px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -462,7 +462,7 @@ html {
     cursor: pointer;
 }
 
-.conteudo__container__bts:hover {
+.conteudo__acai__bts:hover {
     color: var(--cor-texto-muted);
     background: transparent;
     box-shadow: 5px 1px 15px var(--cor-primaria);
