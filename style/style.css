@@ -421,16 +421,16 @@ html {
 
 }
 
-.conteudo__container__texto {
+.conteudo__texto__acai {
     text-align: center;
 }
 
-.conteudo__container__titulo {
+.conteudo__titulo__acai {
     font-family: var(--fonte-titulo);
     font-weight: 700;
     text-align: center;
     font-size: 3rem;
-    background-image: linear-gradient(to top, #e4e2e6, #610298);
+    background-image: linear-gradient(to bottom, #e4e2e6, #610298);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -597,9 +597,9 @@ html {
     font-weight: 600;
     height: auto;
     padding: 1.5rem 2rem;
-    border: 1px solid var(--cor-primaria);
+    border: 1px solid var(--cor-acento);
     border-radius: var(--radius);
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-acento);
     color: var(--cor-texto);
     margin-top: 2.5rem;
     cursor: pointer;
@@ -608,8 +608,8 @@ html {
 .conteudo__container__bts:hover {
     color: var(--cor-texto-muted);
     background: transparent;
-    box-shadow: 5px 1px 15px var(--cor-primaria);
-    border: 1px solid var(--cor-primaria);
+    box-shadow: 5px 1px 15px var(--cor-acento);
+    border: 1px solid var(--cor-acento);
     transform: scale(1.05);
 }
 
