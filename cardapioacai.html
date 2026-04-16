@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDelicia | Açai-lanches</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class='container-principal'>
+    <header class="cabecalho">
+        <section class="cabecalho__container">
+            <img src="./assets/logo de kdelicia.png" alt="logo-da-pagina" class="cabecalho__logo">
+            <nav class="cabecalho__navegacao">
+                <ul class="cabecalho__navegacao__linkin">
+                    <li class="cabecalho__navegacao__linkin__linkis"><a href="./index.html">Home</a></li>
+                    <li class="cabecalho__navegacao__linkin__linkis tem-submenu">
+                        <a href="#">Cardapio ▾</a><!--submenu-->
+                        <ul class="submenu">
+                            <li><a href="./carapiolanche.html">Lanches</a></li>
+                            <li><a href="./cardapioacai.html">Açaí</a></li>
+                        </ul>
+                    </li>
+                    <li class="cabecalho__navegacao__linkin__linkis"><a href="./index.html">sobre</a></li>
+                    <li class="cabecalho__navegacao__linkin__linkis"><a href="#">contato</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__container__acai">
+            <div class="conteudo__container__texto">
+                <h1 class="conteudo__container__titulo">Seja Bem vindo! KDelicia - Açai & Lanches Deliciosos</h1>
+                <p class="conteudo__container__paragrafo">Descubra os melhores açais feitos com ingredientes frescos e
+                    naturais.</p>
+                <button class="conteudo__container__bts">Mate-sua-fome</button>
+            </div>
+        </section>
+
+        <!-- CARDS DE AÇAÍ -->
+        <section class="cardapios-cards">
+            <!--volta aqui e adicionar os inputs ou span de quantidade-->
+            <!--card 1-->
+            <article class="cardapios-cards__acai" data-tipo="acai" onclick="toggleCard(this)">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Banana</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí cremoso batido na hora, servido com banana fresca e granola crocante para um equilíbrio
+                        perfeito de sabor e textura.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 2-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Morango</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí gelado com morangos frescos e finalizado com leite condensado, trazendo uma combinação doce
+                        e
+                        irresistível.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 3-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Nutella</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí cremoso com banana fatiada e uma generosa camada de Nutella, perfeito para quem ama
+                        chocolate.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 4-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí Tropical</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí refrescante com pedaços de manga, abacaxi e coco ralado, ideal para quem gosta de sabores
+                        tropicais.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 5-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Paçoca</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com banana e paçoca triturada, trazendo o sabor marcante do amendoim em cada colherada.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 6-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Oreo</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com pedaços crocantes de Oreo e calda de chocolate, combinação perfeita entre cremosidade e
+                        crocância.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 7-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí Fitness</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com whey protein, banana e aveia, ideal para quem busca energia e um estilo de vida
+                        saudável.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 8-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Kiwi</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com kiwi fresco e um leve toque de mel, trazendo um sabor equilibrado e refrescante.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 9-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Leite Ninho</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí cremoso finalizado com leite Ninho, proporcionando uma textura suave e sabor marcante.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 10-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí com Chocolate</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com calda de chocolate e granulado, perfeito para quem gosta de um toque doce extra.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 11-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí c/ Amendoim</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com morangos frescos e leite Ninho, mistura perfeita entre doce e cremoso.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+
+            <!--card 12-->
+            <article class="cardapios-cards__acai" data-tipo="acai">
+                <img src="./assets/bowls-with-breakfast-desserts-blueberries.jpg" class="cardapios-cards__img">
+                <div class="card-info">
+                    <h3 class="cardapios-cards__nome">Açaí c/ Morango e Ninho</h3>
+                    <p class="cardapios-cards__descricao">
+                        Açaí com morangos frescos e leite Ninho, mistura perfeita entre doce e cremoso.
+                    </p>
+                    <button class="cardapios-cards__btn">Adicionar ao Pedido</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

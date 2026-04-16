@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDelicia | Açai-lanches</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<header class="cabecalho">
+    <section class="cabecalho__container">
+        <img src="./assets/logo de kdelicia.png" alt="logo-da-pagina" class="cabecalho__logo">
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__navegacao__linkin">
+                <li class="cabecalho__navegacao__linkin__linkis"><a href="./index.html">Home</a></li>
+                <li class="cabecalho__navegacao__linkin__linkis tem-submenu">
+                    <a href="#">Cardapio ▾</a><!--submenu-->
+                    <ul class="submenu">
+                        <li><a href="./carapiolanche.html">Lanches</a></li>
+                        <li><a href="./cardapioacai.html">Açaí</a></li>
+                    </ul>
+                </li>
+                <li class="cabecalho__navegacao__linkin__linkis"><a href="#sobre-destaque">sobre</a></li>
+                <li class="cabecalho__navegacao__linkin__linkis"><a href="#">contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+    </section>
+
+</header>
+
+<body class='container-principal'>
+
+    <main class="conteudo">
+        <section class="conteudo__container">
+            <div class="conteudo__texto">
+                <h1 class="conteudo__titulo">Seja Bem vindo! KDelicia - Açai & Lanches Deliciosos</h1>
+                <p class="conteudo__paragrafo">Descubra os melhores açais e lanches feitos com ingredientes frescos e
+                    naturais.</p>
+                <button class="conteudo__bts">Mate-sua-fome</button>
+            </div>
+        </section>
+        <section class="acai-populares">
+            <h2 class="acai-populares__subtitulos">Açai Mais Pedidos</h2>
+            <!--<p class="lanches-populares__paragrafo">Confira esse tops quatros sabores de açai</p>-->
+            <div class="cards">
+
+                <article class="card">
+                    <img src="./assets/acai-de- Açai Bowl.png" alt="Açai Bowl" class="card__img">
+                    <h3 class="card__titulo">Açai Bowl</h3>
+                    <p class="card__descricao">Açai cremoso com frutas frescas e granola.</p>
+                    <a class="card__btn">Adicionar no carrinho<img src="./assets/carrinho-de-compras.png" alt="carrinho"
+                            class="card__carrinho"></a>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/acai-de- Açai Bowl.png" alt="Açai Smoothie" class="card__img">
+                    <h3 class="card__titulo">Açai Smoothie</h3>
+                    <p class="card__descricao">Bebida refrescante de açai com leite e frutas.</p>
+                    <a class="card__btn">Adicionar no carrinho<img src="./assets/carrinho-de-compras.png" alt="carrinho"
+                            class="card__carrinho"></a>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/Açai-com-nutela.png" alt="Açai com Nutella" class="card__img">
+                    <h3 class="card__titulo">Açai com Nutella</h3>
+                    <p class="card__descricao">Açai tradicional com cobertura de Nutella.</p>
+                    <a class="card__btn">Adicionar no carrinho<img src="./assets/carrinho-de-compras.png" alt="carrinho"
+                            class="card__carrinho"></a>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/açai-com-cupuaçu.png" alt="Açai com cupuaçu" class="card__img">
+                    <h3 class="card__titulo">Açai com Cupuaçu</h3>
+                    <p class="card__descricao">Açai tradicional com cobertura de Nutella.</p>
+                    <a class="card__btn">Adicionar no carrinho<img src="./assets/carrinho-de-compras.png" alt="carrinho"
+                            class="card__carrinho"></a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="acai-destaque" id="sobre-destaque">
+            <div class="acai-destaque__container">
+                <div class="acai-destaque__imagem">
+                    <img src="./assets/tigela-de-Açai.png" alt="Açai-Delicioso">
+                </div>
+                <div class="acai-destaque__sobre">
+                    <h4 class="acai-destaque__titulo">Sobre Nossa Açai :)</h4>
+                    <p class="acai-destaque__descricao">Nosso açai é preparado com polpa de frutas amazônicas
+                        selecionadas,
+                        leite condensado cremoso e acompanhamentos frescos como frutas da estação, granola crocante e
+                        mel.
+                        Uma
+                        experiência refrescante e energética, perfeita para qualquer momento do dia, com sabores que
+                        encantam e
+                        nutrem o corpo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lanche-destaque" id="sobre-destaque">
+            <div class="lanche-destaque__container">
+                <div class="lanche-destaque__sobre">
+                    <h4 class="lanche-destaque__titulo">Sobre Nosso Lanche :)</h4>
+                    <p class="lanche-destaque__descricao">Nosso sanduiche especial é preparado com pão artesanal
+                        caseiro,
+                        frango
+                        desfiado temperado na perfeição, queijo meia cura derretido, tomate fresco, alface crocante e
+                        nosso
+                        molho exclusivo que combina sabores únicos e irresistíveis. Uma opção perfeita para quem busca
+                        qualidade
+                        e sabor em cada mordida.</p>
+                </div>
+                <div class="lanche-destaque__imagem">
+                    <img src="./assets/lanchao.jpg" alt="Sanduiche Especial">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
