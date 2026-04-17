@@ -71,7 +71,7 @@ html {
 }
 
 .cabecalho__logo {
-    width: 120px;
+    width: 80px;
 }
 
 .cabecalho__navegacao__linkin {
@@ -681,11 +681,18 @@ html {
 
 /*responsividade das telas*/
 @media (max-width: 768px) {
+
+
     .cabecalho__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex: 1;
+    }
+
+
+    .cabecalho__logo {
+        width: 18%;
+        margin-right: 4rem;
     }
 
     /* mostra botão */
@@ -693,7 +700,7 @@ html {
         display: block;
         position: absolute;
         right: 20px;
-        top: 50px;
+        top: 30px;
         font-size: 28px;
         color: white;
         cursor: pointer;
@@ -703,15 +710,16 @@ html {
     /* esconde menu */
     .cabecalho__navegacao {
         position: absolute;
-        top: 110px;
+        top: 85px;
         left: 0;
-        width: 100%;
+        width: 90%;
         background: var(--cor-bg-secundario);
 
         display: none;
         flex-direction: column;
         padding: 20px;
         z-index: 10000;
+        text-align: center;
     }
 
     /* quando ativar */
